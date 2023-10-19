@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Название сайта{% endblock title %}</title>
+</head>
+<body>
+    <!-- Навбар -->
+    <div id="navbar">
+        {% block navbar %}Стандартный навбар{% endblock navbar %}
+    </div>
+
+    <!-- Основное содержимое -->
+    <main id="content">
+        {% block main %}Основное содержимое здесь{% endblock main %}
+    </main>
+
+    <!-- Футер -->
+    <footer id="footer">
+        {% block footer %}Стандартный футер{% endblock footer %}
+    </footer>
+</body>
+</html>
